@@ -38,7 +38,7 @@ export default function SummarySection() {
                                 </p>
 
                                 <p className="text-[15px] md:text-[16px] text-white/50 leading-[1.8] font-light">
-                                    by using <strong className="text-white/80 font-medium">thermal intelligence</strong> (smart cooling and quantum offloading) and <strong className="text-white/80 font-medium">nuclear SMRs</strong> (on-site clean energy), we can completely bypass the public grid's limits and stop chips from melting down. this is the exact physical foundation we need to hit true AGI.
+                                    by using <strong className="text-white/80 font-medium">thermal intelligence</strong> (smart cooling and quantum offloading) and <strong className="text-white/80 font-medium">nuclear SMRs</strong> (on-site clean energy), we can completely bypass the public grid&apos;s limits and stop chips from melting down. this is the exact physical foundation we need to hit true AGI.
                                 </p>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ export default function SummarySection() {
                                 </p>
                             </div>
                             <p className="text-[15px] text-white/50 leading-[1.8] font-light">
-                                im a builder who spends almost all my time digging into the foundational base layers that run civilization intelligence, energy, capital, and soon space tech. my actual goal is to build <strong className="text-white/80 font-medium">"base companies"</strong> that become the literal infrastructure for the future.
+                                im a builder who spends almost all my time digging into the foundational base layers that run civilization intelligence, energy, capital, and soon space tech. my actual goal is to build <strong className="text-white/80 font-medium">&quot;base companies&quot;</strong> that become the literal infrastructure for the future.
                             </p>
                             <div className="space-y-4 pt-2">
                                 <h4 className="text-white/80 font-medium text-sm tracking-wide">WHAT IM BUILDING RIGHT NOW</h4>
@@ -125,7 +125,7 @@ export default function SummarySection() {
                                     tks excites me alot because it gathers ambitious builders focused on frontier tech. joining this environment will just massively accelerate my learning and let me collab with people actually solving hard problems.
                                 </p>
                                 <p className="text-[15px] text-white/50 leading-[1.8] font-light mt-4">
-                                    because my family's household income is currently <strong className="text-white/80 font-medium">below $10,000 CAD per year</strong>, i am applying for full financial aid. if i get in, im ready to prove i can straight up maximize every ounce of this opportunity.
+                                    because my family&apos;s household income is currently <strong className="text-white/80 font-medium">below $10,000 CAD per year</strong>, i am applying for full financial aid. if i get in, im ready to prove i can straight up maximize every ounce of this opportunity.
                                 </p>
                             </div>
 

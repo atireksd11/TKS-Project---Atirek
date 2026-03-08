@@ -130,7 +130,7 @@ export default function VisionSection() {
                         Software should build itself.
                     </h2>
                     <p className="text-[15px] text-white/30 max-w-lg mx-auto font-light leading-relaxed">
-                        The gap between having an idea and holding a finished product should be zero. That's what we're working toward.
+                        The gap between having an idea and holding a finished product should be zero. That&apos;s what we&apos;re working toward.
                     </p>
                 </motion.div>
 

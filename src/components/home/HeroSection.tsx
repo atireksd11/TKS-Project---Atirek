@@ -86,7 +86,7 @@ export default function HeroSection() {
                         }}
                         className="text-[14px] md:text-[15px] text-white/35 font-light mb-8 text-center mx-auto"
                     >
-                        a 14 year old's blueprint to solve the microsoft <span className="font-bold">energy crisis</span>
+                        a 14 year old&apos;s blueprint to solve the microsoft <span className="font-bold">energy crisis</span>
                     </motion.p>
 
                     {/* CTA */}

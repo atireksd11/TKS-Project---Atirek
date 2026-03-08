@@ -1,0 +1,47 @@
+
+> voyd-landing-page@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.12
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 11.2s
+   Linting and checking validity of types ...
+
+Failed to compile.
+
+./src/components/home/FinalCTA.tsx
+5:22  Warning: 'Sparkles' is defined but never used.  @typescript-eslint/no-unused-vars
+29:27  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+30:27  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/components/home/FounderSection.tsx
+6:7  Warning: 'panels' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/home/HeroSection.tsx
+89:38  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/components/home/SummarySection.tsx
+41:297  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+84:41  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+84:45  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+88:265  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+88:280  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+128:54  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/components/home/UseCases.tsx
+5:120  Warning: 'LucideIcon' is defined but never used.  @typescript-eslint/no-unused-vars
+181:105  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/components/home/VisionSection.tsx
+133:107  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+133:117  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/components/SmoothScroll.tsx
+7:20  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/WaitlistModal.tsx
+3:31  Warning: 'useMemo' is defined but never used.  @typescript-eslint/no-unused-vars
+37:12  Warning: 'submitError' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules

@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function FinalCTA() {
     const ref = useRef(null);
@@ -26,8 +26,8 @@ export default function FinalCTA() {
                     </h2>
 
                     <p className="text-[15px] md:text-[17px] text-white/35 max-w-lg mx-auto font-light leading-relaxed mb-12">
-                        We're opening access in waves. Join now to lock in the lowest pricing
-                        we'll ever offer and get onboarded first.
+                        We&apos;re opening access in waves. Join now to lock in the lowest pricing
+                        we&apos;ll ever offer and get onboarded first.
                     </p>
 
                     {/* Clean CTA button */}

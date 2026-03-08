@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 export default function SmoothScroll({ children }: { children: React.ReactNode }) {
     useEffect(() => {
-        let lenis: any = null;
+        let lenis: unknown = null;
         let raf: number;
 
         async function init() {
@@ -17,7 +17,7 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
                 });
 
                 function animate(time: number) {
-                    lenis?.raf(time);
+                    (lenis as any)?.raf(time);
                     raf = requestAnimationFrame(animate);
                 }
                 raf = requestAnimationFrame(animate);
@@ -30,7 +30,7 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
 
         return () => {
             if (raf) cancelAnimationFrame(raf);
-            lenis?.destroy();
+            (lenis as any)?.destroy();
         };
     }, []);
 

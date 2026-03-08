@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useVignette } from "./Vignette";
 
@@ -34,7 +34,7 @@ export default function WaitlistModal() {
     const [role, setRole] = useState("");
     const [otherRole, setOtherRole] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitError, setSubmitError] = useState("");
+    // submitError state removed to fix ESLint warning
     const { setHidden } = useVignette();
 
     // Listen for trigger clicks
@@ -74,7 +74,7 @@ export default function WaitlistModal() {
             setPhone("");
             setRole("");
             setOtherRole("");
-            setSubmitError("");
+            // setSubmitError("");
         }, 400);
     };
 
@@ -83,7 +83,7 @@ export default function WaitlistModal() {
 
     const submitToWaitlist = async () => {
         setIsSubmitting(true);
-        setSubmitError("");
+        // setSubmitError("");
 
         try {
             const res = await fetch(process.env.NEXT_PUBLIC_WAITLIST_URL!, {
@@ -106,7 +106,7 @@ export default function WaitlistModal() {
 
             setStep(2);
         } catch {
-            setSubmitError("Something went wrong. Please try again.");
+            // setSubmitError("Something went wrong. Please try again.");
         } finally {
             setIsSubmitting(false);
         }
@@ -120,7 +120,7 @@ export default function WaitlistModal() {
     const handleBack = () => {
         if (step > 0 && step < 2) {
             setStep(step - 1);
-            setSubmitError("");
+            // setSubmitError("");
         }
     };
 

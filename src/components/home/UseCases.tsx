@@ -2,7 +2,7 @@
 
 import { useRef, useState, useCallback } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import { Flame, Briefcase, Building2, Rocket, FileCheck, UserX, Gauge, Tag, Bot, Wrench, ShieldCheck, TrendingUp, type LucideIcon } from "lucide-react";
+import { Flame, Briefcase, Building2, Rocket, FileCheck, UserX, Gauge, Tag, Bot, Wrench, ShieldCheck, TrendingUp } from "lucide-react";
 
 const tabs = [
     {
@@ -178,7 +178,7 @@ export default function UseCases() {
                     </span>
                     <h2 className="font-semibold mb-4">Who gets the most out of VØYD?</h2>
                     <p className="text-[15px] text-white/35 max-w-lg mx-auto font-light leading-relaxed">
-                        The people who adopt VØYD early are going to move faster than everyone who doesn't.
+                        The people who adopt VØYD early are going to move faster than everyone who doesn&apos;t.
                     </p>
                 </motion.div>
 

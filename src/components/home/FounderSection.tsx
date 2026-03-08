@@ -3,41 +3,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const panels = [
-    {
-        icon: (
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 16v-4M12 8h.01" />
-            </svg>
-        ),
-        title: "The Vision",
-        description:
-            "Your startup should understand intent, not just execute commands. Describe what you want to build in plain language and watch it come to life.",
-    },
-    {
-        icon: (
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-            </svg>
-        ),
-        title: "Where We Are",
-        description:
-            "VØYD is the first step — a fully autonomous AI CTO that architects, codes, tests, and deploys your entire product. Not a chatbot that advises, but an operator that acts.",
-    },
-    {
-        icon: (
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M5 12h14" />
-                <path d="M12 5l7 7-7 7" />
-            </svg>
-        ),
-        title: "The Journey",
-        description:
-            "We're closing the gap between human intention and machine execution. Every interaction makes the system smarter. We're building toward a future where the tool disappears and only the product remains.",
-    },
-];
-
 export default function FounderSection() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.15 });
