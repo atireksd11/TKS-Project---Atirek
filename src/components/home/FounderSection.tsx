@@ -35,22 +35,22 @@ export default function FounderSection() {
                     <h2 className="font-semibold italic text-white/90">Our Vision</h2>
                 </motion.div>
 
-                {/* Real Video Player */}
+                {/* YouTube Video Embed */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
                     animate={isInView ? { opacity: 1, scale: 1, filter: "blur(0px)" } : {}}
                     transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                    className="max-w-[960px] mx-auto mb-16 aspect-video rounded-2xl overflow-hidden glass-card relative shadow-[0_0_40px_rgba(255,0,0,0.1)]"
+                    className="max-w-[960px] mx-auto mb-16 aspect-video rounded-2xl overflow-hidden glass-card relative shadow-[0_0_40px_rgba(0,243,255,0.1)] group"
                 >
-                    <video
-                        className="w-full h-full object-cover"
-                        controls
-                        playsInline
-                        poster="/vision-bg.png"
-                    >
-                        <source src="/tks-application.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <div className="absolute inset-0 bg-gradient-to-tr from-[#00f3ff]/5 to-transparent pointer-events-none mix-blend-overlay z-10" />
+                    <iframe
+                        className="w-full h-full object-cover relative z-0"
+                        src="https://www.youtube.com/embed/9Q2zE-HuTqE?autoplay=0&rel=0&showinfo=0"
+                        title="TKS Application Video"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
                 </motion.div>
 
                 {/* End of Founder Section */}
