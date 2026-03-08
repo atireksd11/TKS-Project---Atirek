@@ -1,0 +1,59 @@
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/home/HeroSection";
+import ProblemSection from "@/components/home/ProblemSection";
+import CTOPreview from "@/components/home/CTOPreview";
+import CapabilitiesSection from "@/components/home/CapabilitiesSection";
+import HowItWorks from "@/components/home/HowItWorks";
+import FounderSection from "@/components/home/FounderSection";
+import UseCases from "@/components/home/UseCases";
+import VisionSection from "@/components/home/VisionSection";
+import FinalCTA from "@/components/home/FinalCTA";
+import FAQ from "@/components/home/FAQ";
+
+function Divider() {
+    return <div className="gradient-divider" />;
+}
+
+export default function HomePage() {
+    return (
+        <>
+            <main>
+                <HeroSection />
+                <Divider />
+                <ProblemSection />
+                <Divider />
+                <CTOPreview />
+                <Divider />
+                <CapabilitiesSection />
+                <Divider />
+                <HowItWorks />
+                <Divider />
+                <FounderSection />
+                <Divider />
+                <UseCases />
+                <Divider />
+                <VisionSection />
+                <Divider />
+                <FAQ />
+                {/* CTA + Footer share one background */}
+                <div className="relative overflow-hidden">
+                    {/* Shared background for CTA + Footer */}
+                    <div
+                        className="absolute inset-0 z-0"
+                        style={{
+                            backgroundImage: "url('/cta-bg.png')",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center top",
+                            backgroundRepeat: "no-repeat",
+                            opacity: 0.25,
+                            willChange: "transform",
+                            transform: "translateZ(0) scale(1.15)",
+                        }}
+                    />
+                    <FinalCTA />
+                    <Footer />
+                </div>
+            </main>
+        </>
+    );
+}
